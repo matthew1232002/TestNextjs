@@ -17,14 +17,6 @@ function httpReducer(state, action) {
         };
     }
 
-    // if (action.type === 'ERROR') {
-    //     return {
-    //         data: null,
-    //         error: action.errorMessage,
-    //         status: 'completed',
-    //     };
-    // }
-
     return state;
 }
 
@@ -42,10 +34,7 @@ function useHttp(requestFunction, startWithPending = false) {
                 const responseData = await requestFunction(requestData);
                 dispatch({ type: 'SUCCESS', responseData });
             } catch (error) {
-                // dispatch({
-                //     type: 'ERROR',
-                //     errorMessage: error.message || 'Something went wrong!',
-                // });
+                
             }
         },
         [requestFunction]
