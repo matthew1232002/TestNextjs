@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled from \"styled-components\";\nexport const StyledHeader = styled.main`\n  margin: 3rem auto;\n  width: 90%;\n  max-width: 40rem;\n`;","map":null,"metadata":{},"sourceType":"module"}
